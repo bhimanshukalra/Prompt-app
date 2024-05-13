@@ -74,8 +74,6 @@ const PromptCard = ({
       >
         {currentPrompt.tag}
       </p>
-      <p>current: {currentPrompt._id}</p>
-      <p>copied: {copiedPromptId}</p>
       {session?.user?.email === currentPrompt.creator._id &&
         pathname === "/profile" && (
           <div className="mt-5 flex-center gap-4 border-t border-gray-100 pt-3">
