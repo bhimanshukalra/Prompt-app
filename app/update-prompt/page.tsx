@@ -3,7 +3,7 @@
 import { Form } from "@components";
 import { Post } from "@types";
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 const UpdatePrompt = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -53,13 +53,15 @@ const UpdatePrompt = () => {
   };
 
   return (
-    <Form
-      type="Edit"
-      currentPost={currentPost}
-      setCurrentPost={setCurrentPost}
-      isSubmitting={isSubmitting}
-      onSubmit={updatePost}
-    />
+    <Suspense>
+      <Form
+        type="Edit"
+        currentPost={currentPost}
+        setCurrentPost={setCurrentPost}
+        isSubmitting={isSubmitting}
+        onSubmit={updatePost}
+      />
+    </Suspense>
   );
 };
 
