@@ -38,7 +38,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Todo
 
 [] Implement Search by prompt
+
 [] Implement Search by tag
+
 [] Implement Search by username
+
 [] Implement click on tag
+
 [] Implement view other profiles
+
+## Live URL
+
+https://prompt-app-hazel.vercel.app/
